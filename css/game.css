@@ -211,7 +211,7 @@
 .call.run .fireB{animation-name:dieB}
 .call.run .glow{opacity:0;transition:opacity .6s}
 .call.run .ember{display:none}
-.call.run .who{animation:sinkWho .5s ease-out forwards;box-shadow:inset 0 0 0 4px #454849,0 0 0 transparent}
+.call.run .who{animation:sinkWho .5s ease-out forwards;box-shadow:inset 0 0 0 4px #223b9b,0 0 0 transparent}
 .call.run .who video,.call.run .who img{filter:grayscale(1) brightness(.7);transition:filter .5s}
 .call.run .word.ans{filter:grayscale(1) brightness(.78);animation:dropWord .5s .2s cubic-bezier(.3,1.5,.5,1) both, sag .7s .75s ease-in-out forwards}
 .call.run .content .pill{animation:fade .25s .45s both}

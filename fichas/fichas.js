@@ -145,7 +145,7 @@ function render() {
 /* ---------- comprar e sacar (drawer à direita no computador, tela cheia no celular) ---------- */
 let D = null, pixT, expT;
 const PIX = '00020126580014br.gov.bcb.pix0136a1b2c3d4-e5f6-7890-abcd-ef0123456789';
-const QR = (() => { let s = ''; for (let y = 0; y < 21; y++) for (let x = 0; x < 21; x++) { const f = (x < 7 && y < 7) || (x > 13 && y < 7) || (x < 7 && y > 13); const on = f ? (x % 6 === 0 || y % 6 === 0 || (x % 7 > 1 && x % 7 < 5 && y % 7 > 1 && y % 7 < 5) || (x > 13 && (x - 14) % 6 === 0)) : ((x * 7 + y * 13 + x * y) % 3 === 0); if (on) s += `<rect x="${x}" y="${y}" width="1" height="1"/>`; } return `<svg viewBox="0 0 21 21" fill="#101112">${s}</svg>`; })();
+const QR = (() => { let s = ''; for (let y = 0; y < 21; y++) for (let x = 0; x < 21; x++) { const f = (x < 7 && y < 7) || (x > 13 && y < 7) || (x < 7 && y > 13); const on = f ? (x % 6 === 0 || y % 6 === 0 || (x % 7 > 1 && x % 7 < 5 && y % 7 > 1 && y % 7 < 5) || (x > 13 && (x - 14) % 6 === 0)) : ((x * 7 + y * 13 + x * y) % 3 === 0); if (on) s += `<rect x="${x}" y="${y}" width="1" height="1"/>`; } return `<svg viewBox="0 0 21 21" fill="#03043f">${s}</svg>`; })();
 const balMini = () => `<div class="bmini">${ic('coins')}<span class="a"><small>Saldo disponível</small><b>${fmt2(F.saldo)}</b></span><span class="b"><small>Bônus</small><b>${fmt2(F.bonus)}</b></span></div>`;
 function steps(names, at) {
   return `<ol class="steps">${names.map((n, i) => `<li class="${i < at ? 'done' : i === at ? 'on' : ''}"><i>${i < at ? svg('i-check') : i + 1}</i><span>${n}</span></li>`).join('<b></b>')}</ol>`;

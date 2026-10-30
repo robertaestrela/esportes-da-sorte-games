@@ -4,7 +4,7 @@
 .ob1{background:var(--bg-default)}
 .ob1 .hero{position:relative;flex:1;min-height:0;overflow:hidden;background:#05080c}
 .ob1 .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
-.ob1 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:96px;background:linear-gradient(180deg,#10111200,var(--bg-default));pointer-events:none}
+.ob1 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:96px;background:linear-gradient(180deg,#03043f00,var(--bg-default));pointer-events:none}
 .ob1 .bottom{flex:none;display:flex;flex-direction:column;gap:2px;padding-bottom:env(safe-area-inset-bottom,0px)}
 .ob1 .copy{padding:8px 8px 0}
 .ob1 .copy .hscroll{gap:8px}
@@ -56,12 +56,12 @@
 .home{gap:12px}
 .home .stage{position:relative;flex:1;min-height:0;margin:0 8px;border-radius:12px;overflow:hidden;background:#0b1220;box-shadow:inset 0 0 0 1px var(--border-strong)}
 .home .stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
-.home .stage .shade{position:absolute;left:0;right:0;bottom:0;height:320px;background:linear-gradient(180deg,#18191900,var(--bg-subtle));pointer-events:none}
+.home .stage .shade{position:absolute;left:0;right:0;bottom:0;height:320px;background:linear-gradient(180deg,#050e4a00,var(--bg-subtle));pointer-events:none}
 .home .stage .ct{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;gap:8px;padding:8px 8px calc(90px + env(safe-area-inset-bottom,0px))}
 .home .stage .gl{display:flex;flex-direction:column;gap:8px;width:70px;min-height:0;overflow-y:auto;padding-top:12px;margin-top:-12px;scrollbar-width:none}
 .home .stage .gl::-webkit-scrollbar{display:none}
 .home .stage .gl .gb{width:70px;flex:none}
-.home .stage .gl .gb:not(.on){background:#212223b8;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.home .stage .gl .gb:not(.on){background:#080c6ab8;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 .home .stage .acts{display:flex;gap:8px;align-items:center}
 .home .stage .acts .btn{flex:1;height:64px;border-radius:24px;font:600 16px/1.2 var(--f-display)}
 .home .stage .acts .atile{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
@@ -87,8 +87,8 @@
 .chip.big{height:40px}.chip.big .ic{width:24px;height:24px}
 /* skin-pack-card */
 .spk{position:relative;display:flex;flex-direction:column;text-align:left;width:100%}
-.spk.L{height:176px;justify-content:space-between;padding:12px;border-radius:20px;overflow:hidden;background-color:var(--skin-art-base,#28292a);background-size:cover;box-shadow:inset 0 0 0 1px var(--border-muted)}
-.spk.L::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#28292a00 45%,#28292a 100%);pointer-events:none}
+.spk.L{height:176px;justify-content:space-between;padding:12px;border-radius:20px;overflow:hidden;background-color:var(--skin-art-base,#0b1576);background-size:cover;box-shadow:inset 0 0 0 1px var(--border-muted)}
+.spk.L::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0b157600 45%,#0b1576 100%);pointer-events:none}
 .spk.L>*{position:relative}
 .spk.L .top{display:flex;gap:8px}
 .spk.L .info{display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -97,14 +97,14 @@
 .spk.L .info small{font:500 10px/1 var(--f-ui);color:var(--text-muted)}
 .spk .tag{font-size:12px}
 .spk.S{gap:6px}
-.spk.S .art{position:relative;height:96px;border-radius:16px;overflow:hidden;background-color:#28292a;background-size:cover;box-shadow:inset 0 0 0 1px var(--border-muted)}
-.spk.S .art::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#28292a00 45%,#28292ad9 100%)}
+.spk.S .art{position:relative;height:96px;border-radius:16px;overflow:hidden;background-color:#0b1576;background-size:cover;box-shadow:inset 0 0 0 1px var(--border-muted)}
+.spk.S .art::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0b157600 45%,#0b1576d9 100%)}
 .spk.S .art .tag{position:absolute;left:6px;top:6px;padding:2px 8px}
 .spk.S .art .price{position:absolute;right:6px;bottom:6px;padding:3px 8px;border-radius:999px;background:var(--bga-strong-75);box-shadow:inset 0 0 0 1px var(--border-muted);font:500 10px/1 var(--f-ui);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 .spk.S .art .lock{position:absolute;left:50%;top:28px;width:40px;height:40px;margin-left:-20px}
 .spk.S.blocked .art{background:var(--bga-strong-75)}
 .spk.S.blocked.t1 .art{background:linear-gradient(180deg,#e93d8214,#3a2a6440),var(--bga-strong-75)}
-.spk.S.blocked.t2 .art{background:linear-gradient(180deg,#1fb6e814,#28292a40),var(--bga-strong-75)}
+.spk.S.blocked.t2 .art{background:linear-gradient(180deg,#1fb6e814,#0b157640),var(--bga-strong-75)}
 .spk.S.blocked .art::before{display:none}
 .spk.S .tx{display:flex;flex-direction:column;padding-left:2px}
 .spk.S .tx b{font:700 12px/1.5 var(--f-ui)}
@@ -150,7 +150,7 @@
 .picker{padding:0 8px calc(16px + env(safe-area-inset-bottom,0px));gap:12px}
 .picker .stg{position:relative;flex:1;min-height:200px;border-radius:20px;overflow:hidden;background:#0b1220;box-shadow:inset 0 0 0 1px var(--border-muted);display:flex;flex-direction:column;justify-content:flex-end;padding:12px}
 .picker .stg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
-.picker .stg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#21222300 50%,var(--bg-subtle) 100%);pointer-events:none;z-index:1}
+.picker .stg::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#080c6a00 50%,var(--bg-subtle) 100%);pointer-events:none;z-index:1}
 .picker .arrow{position:absolute;top:50%;width:36px;height:36px;margin-top:-18px;border-radius:18px;display:grid;place-items:center;background:var(--bga-strong-75);box-shadow:inset 0 0 0 1px var(--border-muted);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);z-index:2}
 .picker .arrow svg{width:10px;height:16px;fill:var(--text-default)}
 .picker .arrow.p{left:8px}.picker .arrow.n{right:8px}
@@ -248,7 +248,7 @@
 .cmsg .badge{flex:none;display:inline-flex;align-items:center;gap:4px;height:18px;padding:2px 8px 2px 4px;border-radius:999px;font:500 10px/1 var(--f-ui);margin-top:-1px}
 .cmsg .badge .ic{width:14px;height:14px}
 .cmsg .badge.of{background:#3be682;color:var(--btn-primary-text)}
-.cmsg .badge.es{background:#ffc841;color:#101112}
+.cmsg .badge.es{background:#ffc841;color:#03043f}
 .av.s.of img{object-fit:contain;padding:5px;background:var(--bg-raised)}
 .ccard{display:flex;align-items:center;gap:12px;padding:12px;margin-left:40px;border-radius:16px;background:var(--bga-strong-50);box-shadow:inset 0 0 0 1px var(--border-muted)}
 .ccard .ic{width:40px;height:40px}
@@ -379,7 +379,7 @@
 .racer.n2{padding-bottom:32px}.racer.n1{padding-bottom:72px}.racer.n3{padding-bottom:0}
 .racer .badge{display:flex;flex-direction:column;align-items:center}
 .racer .badge .ic{width:32px;height:32px;margin-bottom:-6px}
-.racer .shield{width:30px;height:34px;display:grid;place-items:center;padding-bottom:4px;clip-path:polygon(0 0,100% 0,100% 70%,50% 100%,0 70%);font:600 16px/1 var(--f-display);color:#101112;background:linear-gradient(180deg,#eef2f6,#9aa6b6)}
+.racer .shield{width:30px;height:34px;display:grid;place-items:center;padding-bottom:4px;clip-path:polygon(0 0,100% 0,100% 70%,50% 100%,0 70%);font:600 16px/1 var(--f-display);color:#03043f;background:linear-gradient(180deg,#eef2f6,#9aa6b6)}
 .racer.n1 .shield{background:linear-gradient(180deg,#ffe6b9,#ffbe2e);color:#4a3200}.racer.n3 .shield{background:linear-gradient(180deg,#f3c39a,#b7703e);color:#3a1d0a}
 .racer>b{font:600 14px/1.2 var(--f-display);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 .racer .pts{padding:3px 10px;border-radius:10px;background:#00000052;font:600 14px/1.2 var(--f-display);white-space:nowrap}
@@ -442,7 +442,7 @@
 .uopt .pr .ic.dia{width:20px;height:20px}
 .pk-box .unote{margin:0;font:500 10px/1.3 var(--f-ui);color:var(--text-muted)}
 /* _Diamantes/saldo: o mesmo vidro do saldo do header, com tom azul do diamante */
-.ptop .dpill{flex:none;width:auto;gap:4px;background:linear-gradient(90deg,#4fb8ff1f,#21222306),var(--bga-strong-50)}
+.ptop .dpill{flex:none;width:auto;gap:4px;background:linear-gradient(90deg,#4fb8ff1f,#080c6a06),var(--bga-strong-50)}
 .ptop .dpill .t{flex:none}
 .dsaldo{display:flex;align-items:center;gap:12px;padding:16px;border-radius:16px;background:var(--bg-raised)}
 .dsaldo .ic{width:48px;height:48px}

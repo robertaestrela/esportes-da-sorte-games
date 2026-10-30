@@ -10,7 +10,7 @@ const HAV_SIZE = {xs: [24, 26], s: [32, 35], m: [44, 48], l: [56, 60]};
 function hex(crew, g, w = 'm', h, dot = true, opts = {}) {
   if (typeof w === 'string') [w, h] = HAV_SIZE[w];
   if (!h) h = Math.round(w * 48 / 44);
-  if (crew === 'nenhum' || !crew) return `<span class="hav empty" style="--w:${w}px;--h:${w}px"><svg class="av0" viewBox="0 0 40 40" fill="none" stroke="#edeeee" stroke-width="2" aria-hidden="true"><circle cx="20" cy="20" r="18.5"/><circle cx="20" cy="15.5" r="6"/><path d="M8.6 32.4c2.3-4.5 6.5-7.4 11.4-7.4s9.1 2.9 11.4 7.4"/></svg>${opts.add ? `<span class="add">${svg('i-plus')}</span>` : ''}</span>`;
+  if (crew === 'nenhum' || !crew) return `<span class="hav empty" style="--w:${w}px;--h:${w}px"><svg class="av0" viewBox="0 0 40 40" fill="none" stroke="#e1eeff" stroke-width="2" aria-hidden="true"><circle cx="20" cy="20" r="18.5"/><circle cx="20" cy="15.5" r="6"/><path d="M8.6 32.4c2.3-4.5 6.5-7.4 11.4-7.4s9.1 2.9 11.4 7.4"/></svg>${opts.add ? `<span class="add">${svg('i-plus')}</span>` : ''}</span>`;
   return `<span class="hav" style="--w:${w}px;--h:${h}px;--cc:${crewColor(crew, g)}"><i class="gl"></i><span class="hx"><img src="${photo(crew, g)}" alt=""></span>${dot ? '<i class="on"></i>' : ''}</span>`;
 }
 // avatar-estrela-games · círculo com foto (Loja, sala, perfil)

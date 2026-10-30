@@ -41,8 +41,8 @@ svg{display:block}
 .hdr .side{position:relative;flex:1;min-width:0;display:flex;align-items:center;gap:4px}
 .hdr .logo{width:24px;height:36px;display:grid;place-items:center;flex:none}
 .hdr .logo img{width:25px;height:24px}
-.cpill{flex:1;min-width:0;height:34px;display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:linear-gradient(90deg,#52de7e1a,#21222306),var(--bga-strong-50);box-shadow:inset 0 0 0 1px var(--border-muted);overflow:hidden}
-.cpill.bonus{padding:4px 8px 4px 4px;background:linear-gradient(90deg,#21222306,#ffc8411a),var(--bga-strong-50)}
+.cpill{flex:1;min-width:0;height:34px;display:flex;align-items:center;gap:2px;padding:4px;border-radius:999px;background:linear-gradient(90deg,#52de7e1a,#080c6a06),var(--bga-strong-50);box-shadow:inset 0 0 0 1px var(--border-muted);overflow:hidden}
+.cpill.bonus{padding:4px 8px 4px 4px;background:linear-gradient(90deg,#080c6a06,#ffc8411a),var(--bga-strong-50)}
 .cpill .ic{width:24px;height:24px}
 .cpill .t{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px;text-align:left}
 .cpill .t small{font:500 8px/1 var(--f-ui);color:var(--text-muted)}
